@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'microposts/index'
+  get 'microposts/show'
+  get 'microposts/new'
+  get 'microposts/create'
+  get 'microposts/edit'
+  get 'microposts/update'
+  get 'microposts/delete'
+  resources :microposts
   get 'users/index'
   get 'users/show'
   get 'users/new'
