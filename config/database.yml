@@ -37,7 +37,7 @@ development:
 
 test:
   <<: *default
-  database: toy
+  database: toy_test
 
 production:
   <<: *default
