@@ -21,9 +21,17 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def destroy
+  def update
+    @user = User.find(params[:id])
+    @user.update(user_params)
+    flash[:success] = "This user was successfully removed."
   end
 
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+    flash[:success] = "This user was successfully removed."
+  end
   private
   def user_params
     params.require(:user).permit(:name, :email)

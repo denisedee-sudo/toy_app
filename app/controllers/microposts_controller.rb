@@ -26,7 +26,11 @@ class MicropostsController < ApplicationController
   end
 
   def destroy
+    @micropost = Micropost.find(params[:id])
+    @micropost.destroy
+    flash[:success] = "The post was successfully removed."
   end
+  private
   def microposts_params
     params.require(:micropost).permit(:content, :user_id)
   end
