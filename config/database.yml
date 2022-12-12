@@ -22,7 +22,7 @@ default: &default
 
 development:
   <<: *default
-  database: mysite_development
+  database: toy
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -37,7 +37,7 @@ development:
 
 test:
   <<: *default
-  database: mysite_test
+  database: toy
 
 production:
   <<: *default
