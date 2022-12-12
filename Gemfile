@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) { |repo| "https://github.com/denisedee-sudo/toy_app.git" }
 
 ruby '2.7.7'
 
@@ -26,7 +26,7 @@ gem 'jbuilder', '2.9.1'
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '1.4.4', require: false
+gem 'bootsnap', '1.4.4', require: true
 
 group :development, :test do
   gem 'pg', '1.4.5'
