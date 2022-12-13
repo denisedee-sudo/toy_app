@@ -1,0 +1,18 @@
+databases:
+  - name: toy_appDB
+    databaseName: toy
+    user: denise
+
+services:
+  - type: web
+    name: toy_app
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: postgres://denise:01sj1xOnkKDTUsjJv3gllmD3J6IpfrrV@dpg-ce91h6sgqg418pafmn2g-a/toy
+        fromDatabase:
+          name: mysite
+          property: connectionString
+      - key: 5dc3831fdb4ef944ba3031f36d5b014e
+        sync: false
