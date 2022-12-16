@@ -2,10 +2,18 @@
 <p>Find me in app/views/users/new.html.erb</p>
 
     <%= form_for (@user) do |form| %>
-      <%= form.label :name %>
-      <%= form.text_field :name, :placeholder => "Name" %>
+      <%= form.label :username %>
+      <%= form.text_field :username %>
+      <%= form.label :first_name %>
+      <%= form.text_field :first_name %>
+      <%= form.label :last_name %>
+      <%= form.text_field :last_name %>
       <%= form.label :email %>
-      <%= form.text_field :email, :placeholder => "Email" %>
+      <%= form.email_field :email %>
+      <%= form.label :phone %>
+      <%= form.telephone_field :phone %>
+      <%= form.label :password %>
+      <%= form.password_field :password %>
       <%= form.submit "Submit" %>
     <% end %>
 

@@ -5,6 +5,6 @@
 #   
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-    users = User.create([{ name: 'Denise', email: 'denise@email.com' }])
+    users = User.create([{ username: "Ise", password: "password", first_name: "Denise" , last_name: "De Jesus", email: "ise@email.com", phone: 9760501920 }])
     toys = Toy.create([{ toy_name: 'Lego set', toy_description: 'Modular building blocks' }])
     microposts = Micropost.create([{ content: 'Hello world!', user_id: 1 }])
