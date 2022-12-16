@@ -24,7 +24,7 @@ class ToysController < ApplicationController
       def update
         @toy = toy.find(params[:id])
         @toy.update(toy_params)
-        flash[:success] = "This toy was successfully removed."
+        flash[:success] = "This toy was successfully updated."
       end
     
       def destroy
@@ -34,6 +34,6 @@ class ToysController < ApplicationController
       end
       private
       def toy_params
-        params.require(:toy).permit(:name, :email)
+        params.require(:toy).permit(:toy_name, :toy_description)
       end
 end

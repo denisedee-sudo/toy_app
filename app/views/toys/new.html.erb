@@ -2,10 +2,10 @@
 <p>Find me in app/views/toys/new.html.erb</p>
 
     <%= form_for (@toy) do |form| %>
-      <%= form.label :name %>
-      <%= form.text_field :name, :placeholder => "Name" %>
-      <%= form.label :email %>
-      <%= form.text_field :email, :placeholder => "Email" %>
+      <%= form.label :toy_name %>
+      <%= form.text_field :toy_name, :placeholder => "Toy" %>
+      <%= form.label :toy_description %>
+      <%= form.text_field :toy_description, :placeholder => "Description" %>
       <%= form.submit "Submit" %>
     <% end %>
 
