@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :toys
   resources :microposts
   resources :users
   root "users#index"
