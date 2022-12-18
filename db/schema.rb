@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2022_12_16_163621) do
     t.string "last_name"
     t.string "email"
     t.bigint "phone"
+    t.integer "admin"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
